@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Castoro:ital@0;1&display=swap');
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+p {
+  margin-top: 15px !important;
+  margin-bottom: 15px !important;
+}
+
+.border-pink-500,
+.hover\:border-pink-500:hover {
+  --border-opacity: 1;
+  border-color: #000000!important;
+  border-color: rgba(0, 0, 0, var(--border-opacity))!important;
+}
+
+.side-navigation-panel-select-option-text{
+  font-family: 'Castoro';
+  font-size: 22px!important
+}
