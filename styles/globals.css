@@ -1,5 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Castoro:ital@0;1&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Castoro:ital@0;1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,900;1,900&display=swap");
 
 html,
 body {
@@ -26,11 +27,11 @@ p {
 .border-pink-500,
 .hover\:border-pink-500:hover {
   --border-opacity: 1;
-  border-color: #000000!important;
-  border-color: rgba(0, 0, 0, var(--border-opacity))!important;
+  border-color: #000000 !important;
+  border-color: rgba(0, 0, 0, var(--border-opacity)) !important;
 }
 
-.side-navigation-panel-select-option-text{
-  font-family: 'Castoro';
-  font-size: 22px!important
+.side-navigation-panel-select-option-text {
+  font-family: "Castoro";
+  font-size: 22px !important;
 }

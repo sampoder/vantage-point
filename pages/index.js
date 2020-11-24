@@ -1,7 +1,21 @@
 import Head from "next/head";
-import { Box, Heading, Avatar, Text, Image, Grid } from "@chakra-ui/react";
+import {
+  Box,
+  Heading,
+  Avatar,
+  Text,
+  Image,
+  Grid,
+  Badge,
+  SimpleGrid,
+  GridItem,
+} from "@chakra-ui/react";
+import matter from "gray-matter";
+import { orderBy, filter } from "lodash";
+var GithubSlugger = require("github-slugger");
+const fs = require("fs");
 
-export default function Home() {
+export default function Home(props) {
   return (
     <div>
       <Head>
@@ -20,207 +34,193 @@ export default function Home() {
       >
         <Box position="absolute" bottom="12" left="10">
           <Heading color="white" fontSize="45px" pb="2">
-            Sam Poder Explores Marina Bay
+            {props.featured.title}
           </Heading>
-          <Heading color="white" fontSize="25px">
+          <Text color="white" fontSize="25px" mb="0!important">
             by Sam Poder on the 23rd of September
-          </Heading>
-        </Box>
-      </Box>
-
-      <Box
-        background="linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(https://images.unsplash.com/photo-1525625293386-3f8f99389edd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1549&q=80)"
-        width="50%"
-        objectFit="cover"
-        marginBottom="6"
-        borderRadius="lg"
-        position="relative"
-      >
-        <Box p="10">
-          <Text color="white">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Blandit
-            turpis cursus in hac habitasse platea dictumst quisque. Maecenas sed
-            enim ut sem viverra aliquet eget sit. Mi tempus imperdiet nulla
-            malesuada pellentesque. Bibendum est ultricies integer quis auctor
-            elit sed vulputate.
           </Text>
-          <Avatar name="Dan Abrahmov" src="https://bit.ly/dan-abramov" />
         </Box>
       </Box>
-
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Blandit turpis
-        cursus in hac habitasse platea dictumst quisque. Maecenas sed enim ut
-        sem viverra aliquet eget sit. Mi tempus imperdiet nulla malesuada
-        pellentesque. Bibendum est ultricies integer quis auctor elit sed
-        vulputate. Nec ullamcorper sit amet risus nullam eget felis eget. Elit
-        sed vulputate mi sit amet. Ultrices tincidunt arcu non sodales neque
-        sodales ut. Et sollicitudin ac orci phasellus egestas. Sit amet
-        consectetur adipiscing elit ut aliquam purus. Placerat orci nulla
-        pellentesque dignissim enim sit amet. Enim praesent elementum facilisis
-        leo. Cursus sit amet dictum sit amet justo donec enim. In vitae turpis
-        massa sed elementum tempus egestas. Ut diam quam nulla porttitor massa.
-        Fringilla ut morbi tincidunt augue. Urna duis convallis convallis
-        tellus. Facilisis volutpat est velit egestas dui id ornare. Eu nisl nunc
-        mi ipsum faucibus vitae. Adipiscing bibendum est ultricies integer quis
-        auctor elit sed. Morbi blandit cursus risus at ultrices mi. Sit amet
-        mattis vulputate enim. Sed nisi lacus sed viverra tellus in hac.
-        Fringilla phasellus faucibus scelerisque eleifend donec pretium. Turpis
-        egestas sed tempus urna et. Est sit amet facilisis magna. Eget egestas
-        purus viverra accumsan in nisl. Aliquam malesuada bibendum arcu vitae
-        elementum. Rhoncus urna neque viverra justo nec ultrices. Turpis in eu
-        mi bibendum neque. Felis bibendum ut tristique et. Massa sed elementum
-        tempus egestas sed sed risus pretium quam. Ac auctor augue mauris augue.
-        Eu lobortis elementum nibh tellus molestie nunc non blandit. Iaculis
-        urna id volutpat lacus. Sed adipiscing diam donec adipiscing tristique
-        risus nec feugiat in. Sed lectus vestibulum mattis ullamcorper velit.
-        Elit eget gravida cum sociis. Placerat in egestas erat imperdiet sed
-        euismod nisi porta. Quisque id diam vel quam elementum pulvinar etiam.
-        Sapien nec sagittis aliquam malesuada bibendum. Vestibulum sed arcu non
-        odio euismod lacinia at. Quis commodo odio aenean sed adipiscing diam
-        donec adipiscing. Placerat in egestas erat imperdiet sed euismod nisi
-        porta lorem. Cursus eget nunc scelerisque viverra mauris in aliquam sem
-        fringilla. Habitasse platea dictumst vestibulum rhoncus. Sit amet
-        volutpat consequat mauris. Consectetur adipiscing elit pellentesque
-        habitant morbi tristique senectus et. Scelerisque fermentum dui faucibus
-        in ornare quam viverra orci. Lacus vel facilisis volutpat est velit
-        egestas. Non sodales neque sodales ut etiam sit amet nisl. A diam
-        maecenas sed enim ut sem viverra. Euismod nisi porta lorem mollis
-        aliquam. Egestas diam in arcu cursus euismod quis viverra nibh. Blandit
-        massa enim nec dui nunc. Malesuada fames ac turpis egestas. Urna
-        porttitor rhoncus dolor purus non enim praesent. Fusce ut placerat orci
-        nulla pellentesque dignissim enim sit amet. Luctus venenatis lectus
-        magna fringilla urna porttitor rhoncus dolor purus. Bibendum arcu vitae
-        elementum curabitur vitae nunc sed velit. Curabitur vitae nunc sed velit
-        dignissim sodales. Mattis aliquam faucibus purus in massa. Interdum
-        velit laoreet id donec ultrices tincidunt arcu non. Blandit turpis
-        cursus in hac habitasse platea dictumst quisque sagittis. Phasellus
-        vestibulum lorem sed risus ultricies tristique. Pretium viverra
-        suspendisse potenti nullam ac tortor. Odio ut sem nulla pharetra.
-        Pharetra convallis posuere morbi leo urna molestie at elementum. Purus
-        non enim praesent elementum facilisis leo. Habitant morbi tristique
-        senectus et netus. Accumsan tortor posuere ac ut consequat semper. Ac
-        felis donec et odio pellentesque diam volutpat commodo sed. Nunc non
-        blandit massa enim nec dui. Egestas pretium aenean pharetra magna ac
-        placerat.
-      </p>
-
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Blandit turpis
-        cursus in hac habitasse platea dictumst quisque. Maecenas sed enim ut
-        sem viverra aliquet eget sit. Mi tempus imperdiet nulla malesuada
-        pellentesque. Bibendum est ultricies integer quis auctor elit sed
-        vulputate. Nec ullamcorper sit amet risus nullam eget felis eget. Elit
-        sed vulputate mi sit amet. Ultrices tincidunt arcu non sodales neque
-        sodales ut. Et sollicitudin ac orci phasellus egestas. Sit amet
-        consectetur adipiscing elit ut aliquam purus. Placerat orci nulla
-        pellentesque dignissim enim sit amet. Enim praesent elementum facilisis
-        leo. Cursus sit amet dictum sit amet justo donec enim. In vitae turpis
-        massa sed elementum tempus egestas. Ut diam quam nulla porttitor massa.
-        Fringilla ut morbi tincidunt augue. Urna duis convallis convallis
-        tellus. Facilisis volutpat est velit egestas dui id ornare. Eu nisl nunc
-        mi ipsum faucibus vitae. Adipiscing bibendum est ultricies integer quis
-        auctor elit sed. Morbi blandit cursus risus at ultrices mi. Sit amet
-        mattis vulputate enim. Sed nisi lacus sed viverra tellus in hac.
-        Fringilla phasellus faucibus scelerisque eleifend donec pretium. Turpis
-        egestas sed tempus urna et. Est sit amet facilisis magna. Eget egestas
-        purus viverra accumsan in nisl. Aliquam malesuada bibendum arcu vitae
-        elementum. Rhoncus urna neque viverra justo nec ultrices. Turpis in eu
-        mi bibendum neque. Felis bibendum ut tristique et. Massa sed elementum
-        tempus egestas sed sed risus pretium quam. Ac auctor augue mauris augue.
-        Eu lobortis elementum nibh tellus molestie nunc non blandit. Iaculis
-        urna id volutpat lacus. Sed adipiscing diam donec adipiscing tristique
-        risus nec feugiat in. Sed lectus vestibulum mattis ullamcorper velit.
-        Elit eget gravida cum sociis. Placerat in egestas erat imperdiet sed
-        euismod nisi porta. Quisque id diam vel quam elementum pulvinar etiam.
-        Sapien nec sagittis aliquam malesuada bibendum. Vestibulum sed arcu non
-        odio euismod lacinia at. Quis commodo odio aenean sed adipiscing diam
-        donec adipiscing. Placerat in egestas erat imperdiet sed euismod nisi
-        porta lorem. Cursus eget nunc scelerisque viverra mauris in aliquam sem
-        fringilla. Habitasse platea dictumst vestibulum rhoncus. Sit amet
-        volutpat consequat mauris. Consectetur adipiscing elit pellentesque
-        habitant morbi tristique senectus et. Scelerisque fermentum dui faucibus
-        in ornare quam viverra orci. Lacus vel facilisis volutpat est velit
-        egestas. Non sodales neque sodales ut etiam sit amet nisl. A diam
-        maecenas sed enim ut sem viverra. Euismod nisi porta lorem mollis
-        aliquam. Egestas diam in arcu cursus euismod quis viverra nibh. Blandit
-        massa enim nec dui nunc. Malesuada fames ac turpis egestas. Urna
-        porttitor rhoncus dolor purus non enim praesent. Fusce ut placerat orci
-        nulla pellentesque dignissim enim sit amet. Luctus venenatis lectus
-        magna fringilla urna porttitor rhoncus dolor purus. Bibendum arcu vitae
-        elementum curabitur vitae nunc sed velit. Curabitur vitae nunc sed velit
-        dignissim sodales. Mattis aliquam faucibus purus in massa. Interdum
-        velit laoreet id donec ultrices tincidunt arcu non. Blandit turpis
-        cursus in hac habitasse platea dictumst quisque sagittis. Phasellus
-        vestibulum lorem sed risus ultricies tristique. Pretium viverra
-        suspendisse potenti nullam ac tortor. Odio ut sem nulla pharetra.
-        Pharetra convallis posuere morbi leo urna molestie at elementum. Purus
-        non enim praesent elementum facilisis leo. Habitant morbi tristique
-        senectus et netus. Accumsan tortor posuere ac ut consequat semper. Ac
-        felis donec et odio pellentesque diam volutpat commodo sed. Nunc non
-        blandit massa enim nec dui. Egestas pretium aenean pharetra magna ac
-        placerat.
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Blandit turpis
-        cursus in hac habitasse platea dictumst quisque. Maecenas sed enim ut
-        sem viverra aliquet eget sit. Mi tempus imperdiet nulla malesuada
-        pellentesque. Bibendum est ultricies integer quis auctor elit sed
-        vulputate. Nec ullamcorper sit amet risus nullam eget felis eget. Elit
-        sed vulputate mi sit amet. Ultrices tincidunt arcu non sodales neque
-        sodales ut. Et sollicitudin ac orci phasellus egestas. Sit amet
-        consectetur adipiscing elit ut aliquam purus. Placerat orci nulla
-        pellentesque dignissim enim sit amet. Enim praesent elementum facilisis
-        leo. Cursus sit amet dictum sit amet justo donec enim. In vitae turpis
-        massa sed elementum tempus egestas. Ut diam quam nulla porttitor massa.
-        Fringilla ut morbi tincidunt augue. Urna duis convallis convallis
-        tellus. Facilisis volutpat est velit egestas dui id ornare. Eu nisl nunc
-        mi ipsum faucibus vitae. Adipiscing bibendum est ultricies integer quis
-        auctor elit sed. Morbi blandit cursus risus at ultrices mi. Sit amet
-        mattis vulputate enim. Sed nisi lacus sed viverra tellus in hac.
-        Fringilla phasellus faucibus scelerisque eleifend donec pretium. Turpis
-        egestas sed tempus urna et. Est sit amet facilisis magna. Eget egestas
-        purus viverra accumsan in nisl. Aliquam malesuada bibendum arcu vitae
-        elementum. Rhoncus urna neque viverra justo nec ultrices. Turpis in eu
-        mi bibendum neque. Felis bibendum ut tristique et. Massa sed elementum
-        tempus egestas sed sed risus pretium quam. Ac auctor augue mauris augue.
-        Eu lobortis elementum nibh tellus molestie nunc non blandit. Iaculis
-        urna id volutpat lacus. Sed adipiscing diam donec adipiscing tristique
-        risus nec feugiat in. Sed lectus vestibulum mattis ullamcorper velit.
-        Elit eget gravida cum sociis. Placerat in egestas erat imperdiet sed
-        euismod nisi porta. Quisque id diam vel quam elementum pulvinar etiam.
-        Sapien nec sagittis aliquam malesuada bibendum. Vestibulum sed arcu non
-        odio euismod lacinia at. Quis commodo odio aenean sed adipiscing diam
-        donec adipiscing. Placerat in egestas erat imperdiet sed euismod nisi
-        porta lorem. Cursus eget nunc scelerisque viverra mauris in aliquam sem
-        fringilla. Habitasse platea dictumst vestibulum rhoncus. Sit amet
-        volutpat consequat mauris. Consectetur adipiscing elit pellentesque
-        habitant morbi tristique senectus et. Scelerisque fermentum dui faucibus
-        in ornare quam viverra orci. Lacus vel facilisis volutpat est velit
-        egestas. Non sodales neque sodales ut etiam sit amet nisl. A diam
-        maecenas sed enim ut sem viverra. Euismod nisi porta lorem mollis
-        aliquam. Egestas diam in arcu cursus euismod quis viverra nibh. Blandit
-        massa enim nec dui nunc. Malesuada fames ac turpis egestas. Urna
-        porttitor rhoncus dolor purus non enim praesent. Fusce ut placerat orci
-        nulla pellentesque dignissim enim sit amet. Luctus venenatis lectus
-        magna fringilla urna porttitor rhoncus dolor purus. Bibendum arcu vitae
-        elementum curabitur vitae nunc sed velit. Curabitur vitae nunc sed velit
-        dignissim sodales. Mattis aliquam faucibus purus in massa. Interdum
-        velit laoreet id donec ultrices tincidunt arcu non. Blandit turpis
-        cursus in hac habitasse platea dictumst quisque sagittis. Phasellus
-        vestibulum lorem sed risus ultricies tristique. Pretium viverra
-        suspendisse potenti nullam ac tortor. Odio ut sem nulla pharetra.
-        Pharetra convallis posuere morbi leo urna molestie at elementum. Purus
-        non enim praesent elementum facilisis leo. Habitant morbi tristique
-        senectus et netus. Accumsan tortor posuere ac ut consequat semper. Ac
-        felis donec et odio pellentesque diam volutpat commodo sed. Nunc non
-        blandit massa enim nec dui. Egestas pretium aenean pharetra magna ac
-        placerat.
-      </p>
+      <SimpleGrid columns={2} spacing={10}></SimpleGrid>
+      <div id="latest">
+        <Grid templateColumns="repeat(3, 1fr)" gap={4}>
+          <GridItem colSpan={2}>
+            <SimpleGrid columns={2} spacing={6}>
+              {props.posts.map((post) => (
+                <Box
+                  background={`linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(${post.image})`}
+                  height="300px"
+                  backgroundSize="cover"
+                  width="100%"
+                  objectFit="cover"
+                  marginBottom="6"
+                  borderRadius="lg"
+                  position="relative"
+                  as="a"
+                  href={`/posts/${post.slug}`}
+                >
+                  <Box position="absolute" bottom="12" left="10" pr="10">
+                    <Heading
+                      color="white"
+                      fontSize="35px"
+                      pb="2"
+                      fontWeight="bold"
+                    >
+                      {post.title}
+                    </Heading>
+                    <Text color="white" fontSize="16px" mb="0!important">
+                      by {post.author} <br />
+                      <Badge mt="2" pl="2" pr="2">
+                        Issue #{post.issue}
+                      </Badge>
+                    </Text>
+                  </Box>
+                </Box>
+              ))}
+            </SimpleGrid>
+          </GridItem>
+          <GridItem colSpan={1}>
+            <Box
+              width="100%"
+              objectFit="cover"
+              marginBottom="6"
+              borderRadius="lg"
+              position="relative"
+              borderColor="black"
+              borderWidth="1px"
+            >
+              <Box p="5">
+                <Text pb="15px">
+                  <Heading display="inline-block">🖋 Six Revisions</Heading>
+                </Text>
+                <Text>
+                  The doctor holds my chest against the
+                  <br />
+                  discus, listens like the fish below the
+                  <br />
+                  ice listens to the fisherman.
+                  <br />
+                  “Medicine,” he says, “is not an exact science.”
+                  <br /> <br />
+                  He listens like the ice fisherman listens
+                  <br />
+                  to the fish. I breathe into a nebuliser
+                  <br />
+                  and think about translation—inexact
+                  <br />
+                  art. A fine, particulate mist.
+                  <br />
+                  Snow has fallen onstill-green grass,
+                  <br />
+                  daubed with yellow leaves.
+                  <br />
+                  <br />
+                  <i>by Jane Huffman</i>
+                </Text>
+              </Box>
+            </Box>
+            <Box
+              width="100%"
+              objectFit="cover"
+              marginBottom="6"
+              borderRadius="lg"
+              position="relative"
+              borderColor="black"
+              borderWidth="1px"
+            >
+              <Box p="5">
+                <Text pb="3">
+                  <Avatar
+                    display="inline-block"
+                    name="Dan Abrahmov"
+                    src="https://ca.slack-edge.com/T01DZJA04DN-U01DNC118V7-e0edeb76e9e3-512"
+                    mr="3"
+                  />
+                  <Heading display="inline-block">Editor's Note</Heading>
+                </Text>
+                <Text>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Blandit turpis cursus in hac habitasse platea dictumst
+                  quisque. Maecenas sed enim ut sem viverra aliquet eget sit. Mi
+                  tempus imperdiet nulla malesuada pellentesque. Bibendum est
+                  ultricies integer quis auctor elit sed vulputate.
+                  <br />
+                  <br />
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Blandit turpis cursus in hac habitasse platea dictumst
+                  quisque.
+                </Text>
+              </Box>
+            </Box>
+            <Box
+              width="100%"
+              objectFit="cover"
+              marginBottom="6"
+              borderRadius="lg"
+              position="relative"
+              borderColor="black"
+              borderWidth="1px"
+            >
+              <Box p="5">
+                <Text pb="3">
+                  <Heading display="inline-block">🎶 Playlist</Heading>
+                </Text>
+                <Text>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Blandit turpis cursus in hac habitasse platea dictumst
+                  quisque. Maecenas sed enim ut sem viverra aliquet eget sit. Mi
+                  tempus imperdiet nulla malesuada pellentesque. Bibendum est
+                  ultricies integer quis auctor elit sed vulputate.
+                  <br />
+                  <br />
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Blandit turpis cursus in hac habitasse platea dictumst
+                  quisque.
+                </Text>
+              </Box>
+            </Box>
+          </GridItem>
+        </Grid>
+      </div>
     </div>
   );
+}
+
+export async function getStaticProps() {
+  var slugger = new GithubSlugger();
+  const context = require.context("../posts", false, /\.md$/);
+  var posts = [];
+  let featured;
+  console.log(context.keys());
+  for (const key of context.keys()) {
+    const post = key.slice(2);
+    const file = fs.readFileSync(`./posts/${post}`, "utf8");
+    const content = matter(file);
+    posts.push({
+      title: content.data.title,
+      slug: slugger.slug(content.data.title),
+      author: content.data.author,
+      image: content.data.image ? content.data.image : null,
+      date: content.data.date,
+      issue: content.data.issue,
+    });
+    if (content.data.featured == true) {
+      featured = {
+        title: content.data.title,
+        slug: slugger.slug(content.data.title),
+        author: content.data.author,
+        image: content.data.image ? content.data.image : null,
+        date: content.data.date,
+        issue: content.data.issue,
+      };
+    }
+  }
+  posts = orderBy(posts, "title");
+  posts = orderBy(posts, "issue", "desc");
+  console.log(featured);
+  return { props: { posts, featured: featured } };
 }

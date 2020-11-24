@@ -1,10 +1,9 @@
 ---
-title:  "Singapore"
+title:  "Exploring the Singapore"
 author: 'Sam Poder'
-image: 'https://images.unsplash.com/photo-1525625293386-3f8f99389edd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1549&q=80'
+image: 'https://images.unsplash.com/photo-1606156114499-f44bbb400363?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1001&q=80'
 date: '2020/05/05'
 issue: '1'
-featured: true
 ---
 
 *I* am **SAM**

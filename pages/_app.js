@@ -9,7 +9,7 @@ import { useRouter } from "next/router";
 const theme = extendTheme({
   fonts: {
     body: "'Castoro', system-ui, sans-serif",
-    heading: "'Abril Fatface', serif",
+    heading: "'Playfair Display', serif",
     mono: "Menlo, monospace",
   },
 })
@@ -36,10 +36,6 @@ function MyApp({ Component, pageProps }) {
                 // icon is optional
               },
               {
-                title: "Latest",
-                itemId: "/latest",
-              },
-              {
                 title: "Poetry",
                 itemId: "/poetry",
               },
@@ -50,7 +46,7 @@ function MyApp({ Component, pageProps }) {
             ]}
           />
         </Box>
-        <Box style={{ width: 'calc(95vw)', paddingLeft: '250px', paddingTop: '70px'}}>
+        <Box style={{ width: 'calc(95vw)', paddingLeft: '250px', paddingBottom: '10px', paddingTop: '70px'}}>
           <Component {...pageProps} />
           <hr style={{marginTop: '20px', paddingBottom: '10px'}}/>
           <Text>Produced by students from GEMS World Academy Singapore.</Text>
