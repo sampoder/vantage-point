@@ -22,25 +22,37 @@ export default function Home(props) {
         <title>Create Next App</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
-      <Box
-        background="linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(https://images.unsplash.com/photo-1525625293386-3f8f99389edd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1549&q=80)"
-        height="300px"
-        width="100%"
-        objectFit="cover"
-        marginBottom="6"
-        borderRadius="lg"
-        position="relative"
-      >
-        <Box position="absolute" bottom="12" left="10">
-          <Heading color="white" fontSize="45px" pb="2">
-            {props.featured.title}
-          </Heading>
-          <Text color="white" fontSize="25px" mb="0!important">
-            by Sam Poder on the 23rd of September
-          </Text>
+      <a href={`/posts/${props.featured.slug}`}>
+        <Box
+          height="300px"
+          width="100%"
+          position="relative"
+          overflow="hidden"
+          marginBottom="6"
+          borderRadius="lg"
+          position="relative"
+          zIndex="2"
+        >
+          <Box
+            background="linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(https://images.unsplash.com/photo-1525625293386-3f8f99389edd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1549&q=80)"
+            height="300px"
+            width="100%"
+            objectFit="cover"
+            position="relative"
+            _hover={{ transform: "scale(1.02)" }}
+            transition="ease-in .5s"
+          >
+            <Box position="absolute" bottom="12" left="10">
+              <Heading color="white" fontSize="45px" pb="2">
+                {props.featured.title}
+              </Heading>
+              <Text color="white" fontSize="25px" mb="0!important">
+                by Sam Poder on the 23rd of September
+              </Text>
+            </Box>
+          </Box>
         </Box>
-      </Box>
+      </a>
       <SimpleGrid columns={2} spacing={10}></SimpleGrid>
       <div id="latest">
         <Grid templateColumns="repeat(3, 1fr)" gap={4}>
@@ -48,32 +60,43 @@ export default function Home(props) {
             <SimpleGrid columns={2} spacing={6}>
               {props.posts.map((post) => (
                 <Box
-                  background={`linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(${post.image})`}
                   height="300px"
-                  backgroundSize="cover"
                   width="100%"
-                  objectFit="cover"
+                  position="relative"
+                  overflow="hidden"
+                  as="a"
+                  href={`/posts/${post.slug}`}
                   marginBottom="6"
                   borderRadius="lg"
                   position="relative"
-                  as="a"
-                  href={`/posts/${post.slug}`}
+                  zIndex="2"
                 >
-                  <Box position="absolute" bottom="12" left="10" pr="10">
-                    <Heading
-                      color="white"
-                      fontSize="35px"
-                      pb="2"
-                      fontWeight="bold"
-                    >
-                      {post.title}
-                    </Heading>
-                    <Text color="white" fontSize="16px" mb="0!important">
-                      by {post.author} <br />
-                      <Badge mt="2" pl="2" pr="2">
-                        Issue #{post.issue}
-                      </Badge>
-                    </Text>
+                  <Box
+                    background={`linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(${post.image})`}
+                    backgroundSize="cover"
+                    _hover={{ transform: "scale(1.05)" }}
+                    objectFit="cover"
+                    width="100%"
+                    borderRadius="lg"
+                    height="100%"
+                    transition="ease-in .5s"
+                  >
+                    <Box position="absolute" bottom="12" left="10" pr="10">
+                      <Heading
+                        color="white"
+                        fontSize="35px"
+                        pb="2"
+                        fontWeight="bold"
+                      >
+                        {post.title}
+                      </Heading>
+                      <Text color="white" fontSize="16px" mb="0!important">
+                        by {post.author} <br />
+                        <Badge mt="2" pl="2" pr="2">
+                          Issue #{post.issue}
+                        </Badge>
+                      </Text>
+                    </Box>
                   </Box>
                 </Box>
               ))}
@@ -167,20 +190,12 @@ export default function Home(props) {
                 <Text pb="3">
                   <Heading display="inline-block">🎶 Playlist</Heading>
                 </Text>
-                <Text>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Blandit turpis cursus in hac habitasse platea dictumst
-                  quisque. Maecenas sed enim ut sem viverra aliquet eget sit. Mi
-                  tempus imperdiet nulla malesuada pellentesque. Bibendum est
-                  ultricies integer quis auctor elit sed vulputate.
-                  <br />
-                  <br />
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Blandit turpis cursus in hac habitasse platea dictumst
-                  quisque.
-                </Text>
+                <Text>▶ Singing by Sam Poder</Text>
+                <Text>▶ Singing by Sam Poder</Text>
+                <Text>▶ Singing by Sam Poder</Text>
+                <Text>▶ Singing by Sam Poder</Text>
+                <Text>▶ Singing by Sam Poder</Text>
+                <Text>▶ Singing by Sam Poder</Text>
               </Box>
             </Box>
           </GridItem>
@@ -200,14 +215,6 @@ export async function getStaticProps() {
     const post = key.slice(2);
     const file = fs.readFileSync(`./posts/${post}`, "utf8");
     const content = matter(file);
-    posts.push({
-      title: content.data.title,
-      slug: slugger.slug(content.data.title),
-      author: content.data.author,
-      image: content.data.image ? content.data.image : null,
-      date: content.data.date,
-      issue: content.data.issue,
-    });
     if (content.data.featured == true) {
       featured = {
         title: content.data.title,
@@ -217,6 +224,15 @@ export async function getStaticProps() {
         date: content.data.date,
         issue: content.data.issue,
       };
+    } else {
+      posts.push({
+        title: content.data.title,
+        slug: slugger.slug(content.data.title),
+        author: content.data.author,
+        image: content.data.image ? content.data.image : null,
+        date: content.data.date,
+        issue: content.data.issue,
+      });
     }
   }
   posts = orderBy(posts, "title");
