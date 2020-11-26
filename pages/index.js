@@ -14,15 +14,26 @@ import matter from "gray-matter";
 import { orderBy, filter } from "lodash";
 var GithubSlugger = require("github-slugger");
 const fs = require("fs");
+import Link from "next/link";
 
 export default function Home(props) {
   return (
     <div>
       <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
+        <title>Vantage Point</title>
+        <meta property="og:title" content={'Vantage Point'} />
+        <meta name="twitter:title" content={'Vantage Point'} />
+        <meta name="og:url" content={"https://vantage-point.vercel.app"} />
+        <meta property="og:type" content="website" />
+        <meta property="og:site_name" content={'Vantage Point'} />
+        <meta name="description" content={'Vantage Point strives to deliver different perspectives to you and spur you to use your own voice.'} />
+        <meta property="og:description" content={'Vantage Point strives to deliver different perspectives to you and spur you to use your own voice.'} />
+        <meta name="twitter:description" content={'Vantage Point strives to deliver different perspectives to you and spur you to use your own voice.'} />
+        <meta property="og:image" content={props.featured.image} />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:image" content={props.featured.image} />
       </Head>
-      <a href={`/posts/${props.featured.slug}`}>
+      <Link href={`/posts/${props.featured.slug}`}>
         <Box
           height="300px"
           width="100%"
@@ -34,7 +45,7 @@ export default function Home(props) {
           zIndex="2"
         >
           <Box
-            background="linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(https://images.unsplash.com/photo-1525625293386-3f8f99389edd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1549&q=80)"
+            background={`linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(${props.featured.image})`}
             height="300px"
             width="100%"
             objectFit="cover"
@@ -47,12 +58,12 @@ export default function Home(props) {
                 {props.featured.title}
               </Heading>
               <Text color="white" fontSize="25px" mb="0!important">
-                by Sam Poder on the 23rd of September
+                by {props.featured.author}
               </Text>
             </Box>
           </Box>
         </Box>
-      </a>
+      </Link>
       <SimpleGrid columns={2} spacing={10}></SimpleGrid>
       <div id="latest">
         <Grid templateColumns="repeat(3, 1fr)" gap={4}>

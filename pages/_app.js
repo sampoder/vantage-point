@@ -5,6 +5,7 @@ import { Navigation } from "react-minimal-side-navigation";
 import "react-minimal-side-navigation/lib/ReactMinimalSideNavigation.css";
 import { Box, Heading, Grid, Text, Image } from "@chakra-ui/react";
 import { useRouter } from "next/router";
+import Link from "next/link";
 
 const theme = extendTheme({
   fonts: {
@@ -20,9 +21,16 @@ function MyApp({ Component, pageProps }) {
   return (
     <ChakraProvider theme={theme}>
       <Grid templateColumns="repeat(5, 1fr)" gap={6}>
-        <Box style={{ width: "200px", position: "fixed", height: "100vh", backgroundColor: '#FAF8EB' }}>
+        <Box
+          style={{
+            width: "200px",
+            position: "fixed",
+            height: "100vh",
+            backgroundColor: "#FAF8EB",
+          }}
+        >
           <Image src="https://cloud-iik259j2s.vercel.app/0untitled_design-18.png" />
-          <Box position="absolute" bottom="30px">
+          <Box position="absolute" bottom="30px" width="100%">
             <Navigation
               onSelect={({ itemId }) => {
                 router.push(itemId);
@@ -33,10 +41,6 @@ function MyApp({ Component, pageProps }) {
                   itemId: "/",
                   // you can use your own custom Icon component as well
                   // icon is optional
-                },
-                {
-                  title: "Poetry",
-                  itemId: "/poetry",
                 },
                 {
                   title: "About us",
@@ -56,7 +60,10 @@ function MyApp({ Component, pageProps }) {
         >
           <Component {...pageProps} />
           <hr style={{ marginTop: "20px", paddingBottom: "10px" }} />
-          <Text>Produced by students from GEMS World Academy Singapore.</Text>
+          <Text>
+            Produced by students from{" "}
+            <Link href="https://gwa.edu.sg">GEMS World Academy Singapore</Link>.
+          </Text>
         </Box>
       </Grid>
     </ChakraProvider>

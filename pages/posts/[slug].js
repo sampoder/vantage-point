@@ -10,8 +10,39 @@ export default function Home(props) {
   return (
     <Box>
       <Head>
-        <title>{props.post.title}</title>
-        <link rel="icon" href="/favicon.ico" />
+        <title>Vantage Point</title>
+        <meta
+          property="og:title"
+          content={`${props.post.title} - Vantage Point`}
+        />
+        <meta
+          name="twitter:title"
+          content={`${props.post.title} - Vantage Point`}
+        />
+        <meta name="og:url" content={"https://vantage-point.vercel.app"} />
+        <meta property="og:type" content="website" />
+        <meta property="og:site_name" content={"Vantage Point"} />
+        <meta
+          name="description"
+          content={
+            "Vantage Point strives to deliver different perspectives to you and spur you to use your own voice."
+          }
+        />
+        <meta
+          property="og:description"
+          content={
+            "Vantage Point strives to deliver different perspectives to you and spur you to use your own voice."
+          }
+        />
+        <meta
+          name="twitter:description"
+          content={
+            "Vantage Point strives to deliver different perspectives to you and spur you to use your own voice."
+          }
+        />
+        <meta property="og:image" content={props.post.image} />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:image" content={props.post.image} />
       </Head>
       <Image
         src={props.post.image}
@@ -27,7 +58,7 @@ export default function Home(props) {
           style={{ fontSize: "26px", fontWeight: "400", fontFamily: "Castoro" }}
         >
           {" "}
-          by Sam Poder, 24th April 2020
+          by {props.post.author} (Issue #{props.post.issue})
         </span>
       </Heading>
 
