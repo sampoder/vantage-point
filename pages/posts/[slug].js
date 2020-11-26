@@ -101,6 +101,7 @@ export async function getStaticProps(params) {
       slug: slugger.slug(content.data.title),
       content: content.content,
       author: content.data.author,
+      issue: content.data.issue,
       image: content.data.image ? content.data.image : null,
     });
   }
