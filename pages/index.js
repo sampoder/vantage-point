@@ -21,19 +21,35 @@ export default function Home(props) {
     <div>
       <Head>
         <title>Vantage Point</title>
-        <meta property="og:title" content={'Vantage Point'} />
-        <meta name="twitter:title" content={'Vantage Point'} />
+        <meta property="og:title" content={"Vantage Point"} />
+        <meta name="twitter:title" content={"Vantage Point"} />
         <meta name="og:url" content={"https://vantage-point.vercel.app"} />
         <meta property="og:type" content="website" />
-        <meta property="og:site_name" content={'Vantage Point'} />
-        <meta name="description" content={'Vantage Point strives to deliver different perspectives to you and spur you to use your own voice.'} />
-        <meta property="og:description" content={'Vantage Point strives to deliver different perspectives to you and spur you to use your own voice.'} />
-        <meta name="twitter:description" content={'Vantage Point strives to deliver different perspectives to you and spur you to use your own voice.'} />
+        <meta property="og:site_name" content={"Vantage Point"} />
+        <meta
+          name="description"
+          content={
+            "Vantage Point strives to deliver different perspectives to you and spur you to use your own voice."
+          }
+        />
+        <meta
+          property="og:description"
+          content={
+            "Vantage Point strives to deliver different perspectives to you and spur you to use your own voice."
+          }
+        />
+        <meta
+          name="twitter:description"
+          content={
+            "Vantage Point strives to deliver different perspectives to you and spur you to use your own voice."
+          }
+        />
         <meta property="og:image" content={props.featured.image} />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:image" content={props.featured.image} />
       </Head>
-      <Link href={`/posts/${props.featured.slug}`}>
+      <Heading pb="7" display={["block", "none", "none"]} textAlign="center">Vantage Point</Heading>
+      <Link href={`/posts/${props.featured.slug}`} >
         <Box
           height="300px"
           width="100%"
@@ -43,6 +59,7 @@ export default function Home(props) {
           borderRadius="lg"
           position="relative"
           zIndex="2"
+          display={["none", "block", "block"]}
         >
           <Box
             background={`linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(${props.featured.image})`}
@@ -64,11 +81,59 @@ export default function Home(props) {
           </Box>
         </Box>
       </Link>
-      <SimpleGrid columns={2} spacing={10}></SimpleGrid>
+      <SimpleGrid columns={[1, 2, 2]} spacing={10}></SimpleGrid>
       <div id="latest">
-        <Grid templateColumns="repeat(3, 1fr)" gap={4}>
+        <Grid
+          templateColumns={[
+            "repeat(1, 1fr)",
+            "repeat(3, 1fr)",
+            "repeat(3, 1fr)",
+          ]}
+          gap={4}
+        >
           <GridItem colSpan={2}>
-            <SimpleGrid columns={2} spacing={6}>
+            <SimpleGrid columns={[1, 2, 2]} spacing={6}>
+              <Box
+                height="300px"
+                width="100%"
+                position="relative"
+                overflow="hidden"
+                as="a"
+                href={`/posts/${props.featured.slug}`}
+                marginBottom="6"
+                borderRadius="lg"
+                position="relative"
+                zIndex="2"
+                display={["block", "none", "none"]}
+              >
+                <Box
+                  background={`linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(${props.featured.image})`}
+                  backgroundSize="cover"
+                  _hover={{ transform: "scale(1.05)" }}
+                  objectFit="cover"
+                  width="100%"
+                  borderRadius="lg"
+                  height="100%"
+                  transition="ease-in .5s"
+                >
+                  <Box position="absolute" bottom="12" left="10" pr="10">
+                    <Heading
+                      color="white"
+                      fontSize="35px"
+                      pb="2"
+                      fontWeight="bold"
+                    >
+                      {props.featured.title}
+                    </Heading>
+                    <Text color="white" fontSize="16px" mb="0!important">
+                      by {props.featured.author} <br />
+                      <Badge mt="2" pl="2" pr="2">
+                        Issue #{props.featured.issue}
+                      </Badge>
+                    </Text>
+                  </Box>
+                </Box>
+              </Box>
               {props.posts.map((post) => (
                 <Box
                   height="300px"

@@ -22,6 +22,7 @@ function MyApp({ Component, pageProps }) {
     <ChakraProvider theme={theme}>
       <Grid templateColumns="repeat(5, 1fr)" gap={6}>
         <Box
+          display={["none", "block", "block"]}
           style={{
             width: "200px",
             position: "fixed",
@@ -51,18 +52,17 @@ function MyApp({ Component, pageProps }) {
           </Box>
         </Box>
         <Box
-          style={{
-            width: "calc(95vw)",
-            paddingLeft: "250px",
-            paddingBottom: "10px",
-            paddingTop: "70px",
-          }}
+          width={["100vw", "calc(95vw)", "calc(95vw)"]}
+          paddingLeft={["10px", "250px", "250px"]}
+          paddingRight={["10px", "0px", "0px"]}
+          paddingBottom={["10px", "10px"]}
+          paddingTop={["70px", "70px"]}
         >
           <Component {...pageProps} />
           <hr style={{ marginTop: "20px", paddingBottom: "10px" }} />
           <Text>
             Produced by students from{" "}
-            <Link href="https://gwa.edu.sg">GEMS World Academy Singapore</Link>.
+            <Link href="https://gwa.edu.sg" style={{fontWeight: '600'}}>GEMS World Academy Singapore</Link>.
           </Text>
         </Box>
       </Grid>
