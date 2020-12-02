@@ -62,7 +62,7 @@ function MyApp({ Component, pageProps }) {
           <hr style={{ marginTop: "20px", paddingBottom: "10px" }} />
           <Text>
             Produced by students from{" "}
-            <Link href="https://gwa.edu.sg" style={{fontWeight: '600'}}><strong>GEMS World Academy Singapore</strong></Link>. Contact the team: <Link href="mailto:contact@vantage-point.online"><strong>contact@vantage-point.online</strong>.</Link>
+            <Link href="https://gwa.edu.sg" style={{fontWeight: '600'}}>GEMS World Academy Singapore</Link>. Contact the team: <Link href="mailto:contact@vantage-point.online" style={{fontWeight: '600'}}>contact@vantage-point.online</Link>
           </Text>
         </Box>
       </Grid>
