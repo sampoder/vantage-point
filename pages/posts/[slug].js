@@ -52,7 +52,7 @@ export default function Home(props) {
         marginBottom="6"
         borderRadius="lg"
       />
-      <Heading fontSize="4em" marginBottom="6">
+      <Heading fontSize="3em" marginBottom="6">
         {props.post.title}{" "}
         <span
           style={{ fontSize: "26px", fontWeight: "400", fontFamily: "Castoro" }}
