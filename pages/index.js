@@ -226,7 +226,7 @@ export default function Home(props) {
               position="relative"
               borderColor="black"
               borderWidth="1px"
-              display={props.featured.title == 'Welcome to The Vantage Point?' ? 'none' : 'block' }
+              display={props.featured.issue == '1' ? 'none' : 'block' }
             >
               <Box p="5">
                 <Text pb="3">
