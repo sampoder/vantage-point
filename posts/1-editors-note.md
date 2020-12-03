@@ -13,6 +13,4 @@ We are bringing you articles to expand your knowledge on what free speech is, pi
 
 We are elated that you are about to embark on this adventure with us. Creating this issue was a pure excitement, and we hope that reading and experiencing what is within each page will incite you to reach a new discovery or thought. 
 
-Elizabeth Chernyak
-
-![signature](https://lh3.googleusercontent.com/f4X6IzQyJL693AuizpwPXXfYq1BBIkP-I486dBRf-aj0oXaqH-7ju-dFBhnmoNs5yiQc14_nnWNzVk_Swq0sGU6drt4h_c7WMfqnkFD5-pJjMWRyaSkSUEbZtTLLlTQ_0Vo0zIH2)
+<img src="https://lh3.googleusercontent.com/f4X6IzQyJL693AuizpwPXXfYq1BBIkP-I486dBRf-aj0oXaqH-7ju-dFBhnmoNs5yiQc14_nnWNzVk_Swq0sGU6drt4h_c7WMfqnkFD5-pJjMWRyaSkSUEbZtTLLlTQ_0Vo0zIH2" width="200px" />

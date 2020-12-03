@@ -62,7 +62,7 @@ export default function Home(props) {
         </span>
       </Heading>
 
-      <Markdown source={props.post.content} />
+      <Markdown allowDangerousHtml={true} source={props.post.content} />
     </Box>
   );
 }
