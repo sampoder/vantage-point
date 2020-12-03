@@ -15,4 +15,4 @@ We are elated that you are about to embark on this adventure with us. Creating t
 
 Elizabeth Chernyak
 
-<img src="https://lh3.googleusercontent.com/f4X6IzQyJL693AuizpwPXXfYq1BBIkP-I486dBRf-aj0oXaqH-7ju-dFBhnmoNs5yiQc14_nnWNzVk_Swq0sGU6drt4h_c7WMfqnkFD5-pJjMWRyaSkSUEbZtTLLlTQ_0Vo0zIH2" width="200px" />
+![](https://lh3.googleusercontent.com/f4X6IzQyJL693AuizpwPXXfYq1BBIkP-I486dBRf-aj0oXaqH-7ju-dFBhnmoNs5yiQc14_nnWNzVk_Swq0sGU6drt4h_c7WMfqnkFD5-pJjMWRyaSkSUEbZtTLLlTQ_0Vo0zIH2 =250x)
