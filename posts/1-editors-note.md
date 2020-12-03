@@ -1,7 +1,7 @@
 ---
 title:  "Welcome to The Vantage Point"
 author: 'Elizabeth Chernyak'
-image: 'https://images.unsplash.com/photo-1606156114499-f44bbb400363?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1001&q=80'
+image: 'https://lh3.googleusercontent.com/t5tq9j7c0uFdIOAONCNXrhBGy_wVsIvSn3Z_OQWkPtyws8dZq73IAaWs9w3Kb_I4eW6JCZ47Y3P8rS1bG4E7Vf9R_OXhr_8orjaBiscSUGSUO7q6OpZ8pzfsCI3wRPTtDWGNsjv5'
 date: '2020/05/05'
 issue: '1'
 featured: true

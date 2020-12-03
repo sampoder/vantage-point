@@ -66,6 +66,7 @@ export default function Home(props) {
           <Box
             background={`linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(${props.featured.image})`}
             height="300px"
+            backgroundPosition="center"
             width="100%"
             objectFit="cover"
             position="relative"
