@@ -35,3 +35,5 @@ p {
   font-family: "Castoro";
   font-size: 22px !important;
 }
+
+img[alt=signature] { width: 200px; }
