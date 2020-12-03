@@ -48,8 +48,10 @@ export default function Home(props) {
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:image" content={props.featured.image} />
       </Head>
-      <Heading pb="7" display={["block", "none", "none"]} textAlign="center">Vantage Point</Heading>
-      <Link href={`/posts/${props.featured.slug}`} >
+      <Heading pb="7" display={["block", "none", "none"]} textAlign="center">
+        Vantage Point
+      </Heading>
+      <Link href={`/posts/${props.featured.slug}`}>
         <Box
           height="300px"
           width="100%"
@@ -190,31 +192,37 @@ export default function Home(props) {
             >
               <Box p="5">
                 <Text pb="15px">
-                  <Heading display="inline-block">🖋 Six Revisions</Heading>
+                  <Heading display="inline-block">
+                    🖋 Drown in your freedom
+                  </Heading>
                 </Text>
-                <Text>
-                  The doctor holds my chest against the
+                <Text style={{ lineHeight: '1.9'}}>
+                  Synchronised hearts screaming the ordinary,
                   <br />
-                  discus, listens like the fish below the
+                  Frightened of the sharp whispers in their eyes,
                   <br />
-                  ice listens to the fisherman.
+                  Trapped inside the shadows of expectations,
                   <br />
-                  “Medicine,” he says, “is not an exact science.”
-                  <br /> <br />
-                  He listens like the ice fisherman listens
+                  Hiding behind the bitter conventional walls.
                   <br />
-                  to the fish. I breathe into a nebuliser
+                  Let the soft hues of your words take over,
                   <br />
-                  and think about translation—inexact
+                  Sweeping away the black and white world;
                   <br />
-                  art. A fine, particulate mist.
+                  Let your crackling blood flood their minds,
                   <br />
-                  Snow has fallen onstill-green grass,
+                  Lining their veins with zealous fireworks;
                   <br />
-                  daubed with yellow leaves.
+                  Let the gracious wind swirling in your soul,
+                  <br />
+                  Spread through the rigid norms of humanity;
+                  <br />
+                  Let the spark gleaming through your eyes,
+                  <br />
+                  Inspire them to drown in their own freedom.
                   <br />
                   <br />
-                  <i>by Jane Huffman</i>
+                  <i>by Muskaan Duneja</i>
                 </Text>
               </Box>
             </Box>
@@ -226,7 +234,7 @@ export default function Home(props) {
               position="relative"
               borderColor="black"
               borderWidth="1px"
-              display={props.featured.issue == '1' ? 'none' : 'block' }
+              display={props.featured.issue == "1" ? "none" : "block"}
             >
               <Box p="5">
                 <Text pb="3">
