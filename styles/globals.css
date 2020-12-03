@@ -37,3 +37,7 @@ p {
 }
 
 img[alt=signature] { width: 200px; }
+
+h3{
+  font-size: 1.5em !important;
+}
