@@ -1,7 +1,7 @@
 ---
 title:  "Thinking Like The Colour ‘Grey’"
 author: 'Ishnaa Goenka'
-image: 'https://images.unsplash.com/photo-1606156114499-f44bbb400363?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1001&q=80'
+image: 'https://images.unsplash.com/photo-1585314062340-f1a5a7c9328d?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max'
 date: '2020/05/05'
 issue: '1'
 ---
