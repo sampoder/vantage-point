@@ -78,7 +78,7 @@ export default function Home(props) {
                 {props.featured.title}
               </Heading>
               <Text color="white" fontSize="25px" mb="0!important">
-                by {props.featured.author}
+                {props.featured.issue == "1" ? "Editor's note" : `by ${props.featured.author}` }
               </Text>
             </Box>
           </Box>
