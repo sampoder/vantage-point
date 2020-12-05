@@ -276,12 +276,12 @@ export default function Home(props) {
                 <Text pb="3">
                   <Heading display="inline-block">🎶 Playlist</Heading>
                 </Text>
-                <Text>▶ Singing by Sam Poder</Text>
-                <Text>▶ Singing by Sam Poder</Text>
-                <Text>▶ Singing by Sam Poder</Text>
-                <Text>▶ Singing by Sam Poder</Text>
-                <Text>▶ Singing by Sam Poder</Text>
-                <Text>▶ Singing by Sam Poder</Text>
+                <Text>▶ Blackbird by Sarah McLachlan</Text>
+                <Text>▶ New Light by John Mayer</Text>
+                <Text>▶ Butterfly by Jon Batise</Text>
+                <Text>▶ WE ARE by Sam Poder</Text>
+                <Text>▶ All your love by Jakob Ogawa</Text>
+                <Text style={{ fontWeight: '800' }}><Link href="https://open.spotify.com/playlist/6I656k7GbBEsFd6qGUqL7l">▶ Listen to more on Spotify</Link></Text>
               </Box>
             </Box>
           </GridItem>
