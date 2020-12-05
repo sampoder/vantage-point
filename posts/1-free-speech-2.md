@@ -1,7 +1,7 @@
 ---
 title:  "Freedom is Never Free"
 author: 'Tanisha Chandrasekaran'
-image: 'https://images.unsplash.com/photo-1606156114499-f44bbb400363?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1001&q=80'
+image: 'https://cloud-cnfivjcvy.vercel.app/1image_from_ios__11_.jpg'
 date: '2020/05/05'
 issue: '1'
 ---
