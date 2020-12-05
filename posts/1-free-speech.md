@@ -1,7 +1,7 @@
 ---
 title:  "Free Speech Crisis: Non-fiction Or Myth?"
 author: 'Tanha Azam Chowdhury'
-image: 'https://files.slack.com/files-pri/T01DZJA04DN-F01GJ9VCKED/image_from_ios.jpg?pub_secret=c994225589'
+image: 'https://cloud-cnfivjcvy.vercel.app/0image_from_ios__10_.jpg'
 date: '2020/05/05'
 issue: '1'
 ---
