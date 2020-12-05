@@ -1,12 +1,10 @@
 ---
-title:  "Identity"
+title:  "Identity… Don’t be Sheep!"
 author: 'Cynthia Aung'
-image: 'https://images.unsplash.com/photo-1606156114499-f44bbb400363?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1001&q=80'
+image: 'https://cloud-cnfivjcvy.vercel.app/2image_from_ios__12_.jpg'
 date: '2020/05/05'
 issue: '1'
 ---
-
-### Don’t be a sheep
 
 **“The one who follows the crowd will usually get no further than the crowd. The one who walks alone, is more likely to find himself in places no one has ever been before.” - Albert Einstein**
 
