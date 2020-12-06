@@ -63,6 +63,8 @@ export default function Home(props) {
       </Heading>
 
       <Markdown allowDangerousHtml={true} source={props.post.content} />
+
+    <Text>{props.post.editor ? `This post was edited by ${props.post.editor}.`: ''}</Text>
     </Box>
   );
 }
@@ -103,6 +105,7 @@ export async function getStaticProps(params) {
       author: content.data.author,
       issue: content.data.issue,
       image: content.data.image ? content.data.image : null,
+      editor: content.data.editor ? content.data.editor : null
     });
   }
   const post = filter(posts, (post) => post.slug === params.params.slug)[0];
