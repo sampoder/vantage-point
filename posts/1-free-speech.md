@@ -4,6 +4,7 @@ author: 'Tanha Azam Chowdhury'
 image: 'https://cloud-cnfivjcvy.vercel.app/0image_from_ios__10_.jpg'
 date: '2020/05/05'
 issue: '1'
+editor: 'Muskaan Duneja'
 ---
 
 Free speech is an essential principle that supports an individual to be able to share their thoughts and express their opinions and ideas without fear of government interference, or retaliation of any sorts. 
