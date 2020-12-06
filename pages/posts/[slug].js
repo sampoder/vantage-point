@@ -64,7 +64,7 @@ export default function Home(props) {
 
       <Markdown allowDangerousHtml={true} source={props.post.content} />
 
-    <Text>{props.post.editor ? `This post was edited by ${props.post.editor}.`: ''}</Text>
+    <Text><i>{props.post.editor ? `This post was edited by ${props.post.editor}.`: ''}</i></Text>
     </Box>
   );
 }
