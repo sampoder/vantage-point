@@ -4,6 +4,7 @@ author: 'Cynthia Aung'
 image: 'https://cloud-cnfivjcvy.vercel.app/2image_from_ios__12_.jpg'
 date: '2020/05/05'
 issue: '1'
+editor: 'Jessica Kerisna'
 ---
 
 **“The one who follows the crowd will usually get no further than the crowd. The one who walks alone, is more likely to find himself in places no one has ever been before.” - Albert Einstein**
