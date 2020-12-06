@@ -51,20 +51,42 @@ export default function Home(props) {
         objectFit="cover"
         marginBottom="6"
         borderRadius="lg"
+        display={["block", "block", "none"]}
       />
-      <Heading fontSize="3em" marginBottom="6">
-        {props.post.title}{" "}
-        <span
-          style={{ fontSize: "26px", fontWeight: "400", fontFamily: "Castoro" }}
-        >
-          {" "}
-          by {props.post.author} (Issue #{props.post.issue})
-        </span>
-      </Heading>
 
-      <Markdown allowDangerousHtml={true} source={props.post.content} />
+      <Box>
+        <Image
+          src={props.post.image}
+          float="right"
+          objectFit="cover"
+          marginBottom="6"
+          borderRadius="lg"
+          width="45%"
+          display={["none", "none", "block"]}
+        />
+        <Heading fontSize="3em" marginBottom="6">
+          {props.post.title}{" "}
+          <span
+            style={{
+              fontSize: "26px",
+              fontWeight: "400",
+              fontFamily: "Castoro",
+            }}
+          >
+            {" "}
+            by {props.post.author} (Issue #{props.post.issue})
+          </span>
+        </Heading>
+        <Markdown allowDangerousHtml={true} source={props.post.content} />
+      </Box>
 
-    <Text><i>{props.post.editor ? `This post was edited by ${props.post.editor}.`: ''}</i></Text>
+      <Text>
+        <i>
+          {props.post.editor
+            ? `This post was edited by ${props.post.editor}.`
+            : ""}
+        </i>
+      </Text>
     </Box>
   );
 }
@@ -105,7 +127,7 @@ export async function getStaticProps(params) {
       author: content.data.author,
       issue: content.data.issue,
       image: content.data.image ? content.data.image : null,
-      editor: content.data.editor ? content.data.editor : null
+      editor: content.data.editor ? content.data.editor : null,
     });
   }
   const post = filter(posts, (post) => post.slug === params.params.slug)[0];
