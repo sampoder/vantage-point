@@ -3,7 +3,7 @@ import { orderBy, filter } from "lodash";
 var GithubSlugger = require("github-slugger");
 const fs = require("fs");
 var Markdown = require("react-markdown");
-import { Box, Heading, Image, Grid } from "@chakra-ui/react";
+import { Box, Heading, Image, Text, Grid } from "@chakra-ui/react";
 import Head from "next/head";
 
 export default function Home(props) {
