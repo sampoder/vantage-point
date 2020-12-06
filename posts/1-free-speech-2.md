@@ -4,7 +4,7 @@ author: 'Tanisha Chandrasekaran'
 image: 'https://cloud-cnfivjcvy.vercel.app/1image_from_ios__11_.jpg'
 date: '2020/05/05'
 issue: '1'
-editor: 'DariusFleischmann'
+editor: 'Darius Fleischmann'
 ---
 
 Freedom of speech. Freedom is something we all desire, but how much freedom do we really need? 
