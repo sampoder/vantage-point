@@ -59,7 +59,7 @@ export default function Home(props) {
           src={props.post.image}
           float="right"
           objectFit="cover"
-          marginBottom="6"
+          margin="6"
           borderRadius="lg"
           width="45%"
           display={["none", "none", "block"]}
