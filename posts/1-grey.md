@@ -4,6 +4,7 @@ author: 'Ishnaa Goenka'
 image: 'https://images.unsplash.com/photo-1585314062340-f1a5a7c9328d?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max'
 date: '2020/05/05'
 issue: '1'
+editor: 'Arshia Sharma'
 ---
 
 Binary thinking, or ‘black and white’ thinking is where one sees a topic as good or bad, right or wrong, all or nothing. Instead, if we think like the colour ‘grey’ which is a mix of black and white, this can allow us to take multiple perspectives into consideration as not everything can be simplified into two things. Thinking grey can improve our mindset and sometimes we don’t realize the negative effects that a simplified approach of thinking has on us.
