@@ -278,11 +278,28 @@ export default function Home(props) {
                 </Text>
                 <Text>▶ Blackbird by Sarah McLachlan</Text>
                 <Text>▶ New Light by John Mayer</Text>
-                <Text>▶ Butterfly by Jon Batise</Text>
-                <Text>▶ WE ARE by Sam Poder</Text>
+                <Text>▶ Butterfly by Cleo Sol</Text>
+                <Text>▶ WE ARE by Jon Batise</Text>
                 <Text>▶ All your love by Jakob Ogawa</Text>
                 <Text fontWeight="bold"><Link href="https://open.spotify.com/playlist/6I656k7GbBEsFd6qGUqL7l">▶ Listen to more on Spotify</Link></Text>
               </Box>
+            </Box>
+            <Box
+              width="100%"
+              objectFit="cover"
+              marginBottom="6"
+              borderRadius="lg"
+              position="relative"
+              borderColor="black"
+              borderWidth="1px"
+              p="5"
+            >
+              <strong>Want to join the team?</strong> We don't have a formal application
+              process open at the moment, however, you can email{" "}
+              <i>
+                <a href="mailto:21elizabeth.c@gwa.edu.sg">Elizabeth Chernyak</a>
+              </i>{" "}
+              if you're interested.
             </Box>
           </GridItem>
         </Grid>
