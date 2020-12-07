@@ -29,19 +29,19 @@ export default function Home(props) {
         <meta
           name="description"
           content={
-            "Vantage Point strives to deliver different perspectives to you and spur you to use your own voice."
+            "Der FFF-Podcast informiert über Themen rund um den Klimawandel, Umweltschutz und natürlich Fridays for Future"
           }
         />
         <meta
           property="og:description"
           content={
-            "Vantage Point strives to deliver different perspectives to you and spur you to use your own voice."
+            "Der FFF-Podcast informiert über Themen rund um den Klimawandel, Umweltschutz und natürlich Fridays for Future."
           }
         />
         <meta
           name="twitter:description"
           content={
-            "Vantage Point strives to deliver different perspectives to you and spur you to use your own voice."
+            "Der FFF-Podcast informiert über Themen rund um den Klimawandel, Umweltschutz und natürlich Fridays for Future"
           }
         />
         <meta property="og:image" content={props.featured.image} />
@@ -191,36 +191,15 @@ export default function Home(props) {
               <Box p="5">
                 <Text pb="15px">
                   <Heading display="inline-block">
-                    🖋 Drown in your freedom
+                    🖋 Zitat des Monats
                   </Heading>
                 </Text>
                 <Text style={{ lineHeight: '1.9'}}>
-                  Synchronised hearts screaming the ordinary,
-                  <br />
-                  Frightened of the sharp whispers in their eyes,
-                  <br />
-                  Trapped inside the shadows of expectations,
-                  <br />
-                  Hiding behind the bitter conventional walls.
-                  <br />
-                  Let the soft hues of your words take over,
-                  <br />
-                  Sweeping away the black and white world;
-                  <br />
-                  Let your crackling blood flood their minds,
-                  <br />
-                  Lining their veins with zealous fireworks;
-                  <br />
-                  Let the gracious wind swirling in your soul,
-                  <br />
-                  Spread through the rigid norms of humanity;
-                  <br />
-                  Let the spark gleaming through your eyes,
-                  <br />
-                  Inspire them to drown in their own freedom.
-                  <br />
-                  <br />
-                  <i>by Muskaan Duneja</i>
+                If the ocean dies, we die!
+                Captain Paul Watson-Gründer Sea Shepherd Conservation Society
+                --
+                Jeder, der glaubt, exponentielles Wachstum kann andauernd weitergehen in einer endlichen Welt, ist entweder ein Verrückter oder ein Ökonom
+                Kenneth Ewart Boulding-britischer Wirtschaftswissenschaftler
                 </Text>
               </Box>
             </Box>
@@ -237,10 +216,7 @@ export default function Home(props) {
               <Box p="5">
                 <Text pb="3">
                   <Avatar
-                    display="inline-block"
-                    name="Dan Abrahmov"
-                    src="https://ca.slack-edge.com/T01DZJA04DN-U01DNC118V7-e0edeb76e9e3-512"
-                    mr="3"
+                   
                   />
                   <Heading display="inline-block">Editor's Note</Heading>
                 </Text>
@@ -269,34 +245,7 @@ export default function Home(props) {
               borderColor="black"
               borderWidth="1px"
             >
-              <Box p="5">
-                <Text pb="3">
-                  <Heading display="inline-block">🎶 Playlist</Heading>
-                </Text>
-                <Text>▶ Blackbird by Sarah McLachlan</Text>
-                <Text>▶ New Light by John Mayer</Text>
-                <Text>▶ Butterfly by Cleo Sol</Text>
-                <Text>▶ WE ARE by Jon Batise</Text>
-                <Text>▶ All your love by Jakob Ogawa</Text>
-                <Text fontWeight="bold"><Link href="https://open.spotify.com/playlist/6I656k7GbBEsFd6qGUqL7l">▶ Listen to more on Spotify</Link></Text>
-              </Box>
-            </Box>
-            <Box
-              width="100%"
-              objectFit="cover"
-              marginBottom="6"
-              borderRadius="lg"
-              position="relative"
-              borderColor="black"
-              borderWidth="1px"
-              p="5"
-            >
-              <strong>Want to join the team?</strong> We don't have a formal application
-              process open at the moment, however, you can email{" "}
-              <i>
-                <a href="mailto:21elizabeth.c@gwa.edu.sg">Elizabeth Chernyak</a>
-              </i>{" "}
-              if you're interested.
+              
             </Box>
           </GridItem>
         </Grid>
