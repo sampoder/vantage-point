@@ -86,13 +86,13 @@ export default function Home(props) {
         <Grid
           templateColumns={[
             "repeat(1, 1fr)",
-            "repeat(2, 1fr)",
+            "repeat(3, 1fr)",
             "repeat(3, 1fr)",
           ]}
           gap={4}
         >
           <GridItem colSpan={2}>
-            <SimpleGrid columns={[1, 2, 2]} spacing={6}>
+            <SimpleGrid columns={[1, 1, 2]} spacing={6}>
               <Box
                 height="300px"
                 width="100%"
