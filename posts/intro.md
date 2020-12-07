@@ -3,6 +3,7 @@ title:  "Willkommen beim FFF Podcast!"
 author: 'Podcast-Koordinationsteam'
 image: 'https://cloud-i2gcpzgrh.vercel.app/0image.png'
 date: '2020/07/12'
+issue: '0.0'
 featured: true
 ---
 Hallo,
