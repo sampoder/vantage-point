@@ -62,7 +62,7 @@ function MyApp({ Component, pageProps }) {
             Vantage Point
           </Heading>
           <Link href="/about">
-              <Text pb="7" display={["block", "none", "none"]} textAlign="center" fontWeight="bold">
+              <Text pb="4" display={["block", "none", "none"]} textAlign="center" fontWeight="bold">
                 About us
               </Text>
           </Link >
