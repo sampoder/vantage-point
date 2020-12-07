@@ -48,9 +48,6 @@ export default function Home(props) {
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:image" content={props.featured.image} />
       </Head>
-      <Heading pb="7" display={["block", "none", "none"]} textAlign="center">
-        Vantage Point
-      </Heading>
       <Link href={`/posts/${props.featured.slug}`}>
         <Box
           height="300px"
