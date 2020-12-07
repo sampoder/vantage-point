@@ -56,7 +56,7 @@ function MyApp({ Component, pageProps }) {
           paddingLeft={["10px", "250px", "250px"]}
           paddingRight={["10px", "0px", "0px"]}
           paddingBottom={["10px", "10px"]}
-          paddingTop={["70px", "70px"]}
+          paddingTop={["30px", "70px", "70px"]}
         >
           <Heading pb="7" display={["block", "none", "none"]} textAlign="center">
             Vantage Point
