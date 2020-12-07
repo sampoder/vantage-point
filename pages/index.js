@@ -195,11 +195,10 @@ export default function Home(props) {
                   </Heading>
                 </Text>
                 <Text style={{ lineHeight: '1.9'}}>
-                If the ocean dies, we die!
+                If the ocean dies, we die!-
+                </Text>
+                <Text style={{ lineHeight: '1.9'}}>
                 Captain Paul Watson-Gründer Sea Shepherd Conservation Society
-                --
-                Jeder, der glaubt, exponentielles Wachstum kann andauernd weitergehen in einer endlichen Welt, ist entweder ein Verrückter oder ein Ökonom
-                Kenneth Ewart Boulding-britischer Wirtschaftswissenschaftler
                 </Text>
               </Box>
             </Box>
