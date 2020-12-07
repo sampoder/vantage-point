@@ -58,14 +58,16 @@ function MyApp({ Component, pageProps }) {
           paddingBottom={["10px", "10px"]}
           paddingTop={["30px", "70px", "70px"]}
         >
-          <Heading pb="3" display={["block", "none", "none"]} textAlign="center">
-            Vantage Point
-          </Heading>
+          <Link href="/">
+            <Heading pb="3" display={["block", "none", "none"]} textAlign="center">
+              Vantage Point
+            </Heading>
+          </Link>
           <Link href="/about">
               <Text pb="4" display={["block", "none", "none"]} textAlign="center" fontWeight="bold">
                 About us
               </Text>
-          </Link >
+          </Link>
           <Component {...pageProps} />
           <hr style={{ marginTop: "20px", paddingBottom: "10px" }} />
           <Text>
