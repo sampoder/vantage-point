@@ -58,6 +58,9 @@ function MyApp({ Component, pageProps }) {
           paddingBottom={["10px", "10px"]}
           paddingTop={["70px", "70px"]}
         >
+          <Heading pb="7" display={["block", "none", "none"]} textAlign="center">
+            Vantage Point
+          </Heading>
           <Component {...pageProps} />
           <hr style={{ marginTop: "20px", paddingBottom: "10px" }} />
           <Text>
