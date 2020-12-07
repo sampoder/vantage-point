@@ -71,7 +71,7 @@ function MyApp({ Component, pageProps }) {
           <Component {...pageProps} />
           <hr style={{ marginTop: "20px", paddingBottom: "10px" }} />
           <Text>
-            Impressum und DSGVO:{" "}
+            Impressum und DSGVO:{"https://impressum.qualladoom.repl.co"}
             <Link href="https://impressum.qualladoom.repl.co" style={{fontWeight: '600'}}> </Link>
           </Text>
         </Box>
