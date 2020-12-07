@@ -13,31 +13,31 @@ export default function Home(props) {
         <title>Vantage Point</title>
         <meta
           property="og:title"
-          content={`${props.post.title} - Vantage Point`}
+          content={`${props.post.title} - FFF Podcast`}
         />
         <meta
           name="twitter:title"
-          content={`${props.post.title} - Vantage Point`}
+          content={`${props.post.title} - FFF Podcast`}
         />
         <meta name="og:url" content={"https://vantage-point.vercel.app"} />
         <meta property="og:type" content="website" />
-        <meta property="og:site_name" content={"Vantage Point"} />
+        <meta property="og:site_name" content={"FFF-Podcast"} />
         <meta
           name="description"
           content={
-            "Vantage Point strives to deliver different perspectives to you and spur you to use your own voice."
+            "Der FFF-Podcast informiert über Themen rund um den Klimawandel, Umweltschutz und natürlich Fridays for Future."
           }
         />
         <meta
           property="og:description"
           content={
-            "Vantage Point strives to deliver different perspectives to you and spur you to use your own voice."
+            "Der FFF-Podcast informiert über Themen rund um den Klimawandel, Umweltschutz und natürlich Fridays for Future."
           }
         />
         <meta
           name="twitter:description"
           content={
-            "Vantage Point strives to deliver different perspectives to you and spur you to use your own voice."
+            "Der FFF-Podcast informiert über Themen rund um den Klimawandel, Umweltschutz und natürlich Fridays for Future."
           }
         />
         <meta property="og:image" content={props.post.image} />
@@ -83,7 +83,7 @@ export default function Home(props) {
       <Text>
         <i>
           {props.post.editor
-            ? `This post was edited by ${props.post.editor}.`
+            ? `Zuletzt bearbeitet von: ${props.post.editor}.`
             : ""}
         </i>
       </Text>
