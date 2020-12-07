@@ -19,7 +19,7 @@ export default function Home(props) {
           name="twitter:title"
           content={`${props.post.title} - FFF Podcast`}
         />
-        <meta name="og:url" content={"https://vantage-point.vercel.app"} />
+        <meta name="og:url" content={"https://vantage-point-dun.vercel.app"} />
         <meta property="og:type" content="website" />
         <meta property="og:site_name" content={"FFF-Podcast"} />
         <meta

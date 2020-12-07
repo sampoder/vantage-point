@@ -30,7 +30,7 @@ function MyApp({ Component, pageProps }) {
             backgroundColor: "#FAF8EB",
           }}
         >
-          <Image src="https://cloud-iik259j2s.vercel.app/0untitled_design-18.png" />
+          <Image src="https://cloud-mnni05z1e.vercel.app/0image.png"/>
           <Box position="absolute" bottom="30px" width="100%">
             <Navigation
               onSelect={({ itemId }) => {
