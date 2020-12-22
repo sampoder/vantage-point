@@ -10,7 +10,7 @@ export default function Home(props) {
   return (
     <Box>
       <Head>
-        <title>Vantage Point</title>
+        <title>FFF-Podcast</title>
         <meta
           property="og:title"
           content={`${props.post.title} - FFF Podcast`}

@@ -1,7 +1,7 @@
 import Head from 'next/head'
 
 export default ({
-  name = 'Vantage Point',
+  name = 'FFF Podcast',
   title = 'Your Project',
   description = '',
   image = 'https://yourproject.vercel.app/card.png',

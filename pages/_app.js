@@ -60,7 +60,7 @@ function MyApp({ Component, pageProps }) {
         >
           <Link href="/">
             <Heading pb="3" display={["block", "none", "none"]} textAlign="center">
-              Vantage Point
+              FFF-Podcast
             </Heading>
           </Link>
           <Link href="/about">
