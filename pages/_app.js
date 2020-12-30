@@ -21,7 +21,7 @@ function MyApp({ Component, pageProps }) {
   return (
     <ChakraProvider theme={theme}>
       <Grid templateColumns="repeat(5, 1fr)" gap={6}>
-          <Box position="fixedx" bottom="90px" width="100%">
+          <Box position="fixed" bottom="90px" width="100%">
             <Navigation
               onSelect={({ itemId }) => {
                 router.push(itemId);
