@@ -10,3 +10,4 @@ Custos Vera is an independent geopolitical reporting agency. We report without b
 A project by authors all over the globe, led by Malte Ian Lauterbach.
 
 
+‚
