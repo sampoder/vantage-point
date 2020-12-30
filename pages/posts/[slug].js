@@ -37,7 +37,7 @@ export default function Home(props) {
         <meta
           name="twitter:description"
           content={
-            "Custos Vera- Unbiased information on events as they occur.
+            "Custos Vera- Unbiased information on events as they occur."
           }
         />
         <meta property="og:image" content={props.post.image} />
