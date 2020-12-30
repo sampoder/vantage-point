@@ -204,28 +204,6 @@ export default function Home(props) {
               borderWidth="1px"
               display={props.featured.issue == "1" ? "none" : "block"}
             >
-              <Box p="5">
-                <Text pb="3">
-                  <Avatar
-                   
-                  />
-                  <Heading display="inline-block">Editor's Note</Heading>
-                </Text>
-                <Text>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Blandit turpis cursus in hac habitasse platea dictumst
-                  quisque. Maecenas sed enim ut sem viverra aliquet eget sit. Mi
-                  tempus imperdiet nulla malesuada pellentesque. Bibendum est
-                  ultricies integer quis auctor elit sed vulputate.
-                  <br />
-                  <br />
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Blandit turpis cursus in hac habitasse platea dictumst
-                  quisque.
-                </Text>
-              </Box>
             </Box>
             <Box
               width="100%"
