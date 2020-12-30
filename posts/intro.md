@@ -1,5 +1,5 @@
 ---
-title:  'Custos Vera- Stories in a world where facts matter
+title:  'Custos Vera- Stories in a world where facts matter'
 author: 'Malte Ian Lauterbach'
 image: 'https://cloud-ojgr0aq37.vercel.app/0image_from_ios.png'
 date: '2020/07/12'
