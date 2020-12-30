@@ -10,34 +10,34 @@ export default function Home(props) {
   return (
     <Box>
       <Head>
-        <title>FFF-Podcast</title>
+        <title>Custos Vera</title>
         <meta
           property="og:title"
-          content={`${props.post.title} - FFF Podcast`}
+          content={`${props.post.title} - Custos Vera`}
         />
         <meta
           name="twitter:title"
-          content={`${props.post.title} - FFF Podcast`}
+          content={`${props.post.title} - Custos Vera`}
         />
         <meta name="og:url" content={"https://vantage-point-dun.vercel.app"} />
         <meta property="og:type" content="website" />
-        <meta property="og:site_name" content={"FFF-Podcast"} />
+        <meta property="og:site_name" content={"Custos Vera"} />
         <meta
           name="description"
           content={
-            "Der FFF-Podcast informiert über Themen rund um den Klimawandel, Umweltschutz und natürlich Fridays for Future."
+            "Custos Vera is a geopolitical blog that was born to provide unbiased information on events as they occur."
           }
         />
         <meta
           property="og:description"
           content={
-            "Der FFF-Podcast informiert über Themen rund um den Klimawandel, Umweltschutz und natürlich Fridays for Future."
+            "Custos Vera is a geopolitical blog that was born to provide unbiased information on events as they occur"
           }
         />
         <meta
           name="twitter:description"
           content={
-            "Der FFF-Podcast informiert über Themen rund um den Klimawandel, Umweltschutz und natürlich Fridays for Future."
+            "Custos Vera- Unbiased information on events as they occur.
           }
         />
         <meta property="og:image" content={props.post.image} />
@@ -79,14 +79,6 @@ export default function Home(props) {
         </Heading>
         <Markdown allowDangerousHtml={true} source={props.post.content} />
       </Box>
-
-      <Text>
-        <i>
-          {props.post.editor
-            ? `Zuletzt bearbeitet von: ${props.post.editor}.`
-            : ""}
-        </i>
-      </Text>
     </Box>
   );
 }

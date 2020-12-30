@@ -23,7 +23,6 @@ export default function Home(props) {
         <title>Custos Vera</title>
         <meta property="og:title" content={"Custos Vera"} />
         <meta name="twitter:title" content={"Custos Vera"} />
-        <meta name="og:url" content={"https://vantage-point-62gmr7n2g.vercel.app"} />
         <meta property="og:type" content="website" />
         <meta property="og:site_name" content={"Custos Vera"} />
         <meta
@@ -41,7 +40,7 @@ export default function Home(props) {
         <meta
           name="twitter:description"
           content={
-            "Custos Vera- Unbiased information about events as they occur."
+            "Custos Vera- Unbiased information on events as they occur."
           }
         />
         <meta property="og:image" content={props.featured.image} />
@@ -183,14 +182,14 @@ export default function Home(props) {
               <Box p="5">
                 <Text pb="15px">
                   <Heading display="inline-block">
-                    🖋 Zitat des Monats
+                    🖋 Quote of the month
                   </Heading>
                 </Text>
                 <Text style={{ lineHeight: '1.9'}}>
-                If the ocean dies, we die!-
+                 , written“The old world is dying and the new world struggles to be born. Now is the time of monsters.”
                 </Text>
                 <Text style={{ lineHeight: '1.9'}}>
-                Captain Paul Watson-Gründer Sea Shepherd Conservation Society
+                Antonio Gramsci-Italian COmmunist Theorist
                 </Text>
               </Box>
             </Box>
@@ -204,6 +203,7 @@ export default function Home(props) {
               borderWidth="1px"
               display={props.featured.issue == "1" ? "none" : "block"}
             >
+
             </Box>
             <Box
               width="100%"

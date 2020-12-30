@@ -21,7 +21,7 @@ function MyApp({ Component, pageProps }) {
   return (
     <ChakraProvider theme={theme}>
       <Grid templateColumns="repeat(5, 1fr)" gap={6}>
-          <Box position="absolute" bottom="30px" width="100%">
+          <Box position="fixes" bottom="90px" width="100%">
             <Navigation
               onSelect={({ itemId }) => {
                 router.push(itemId);
@@ -49,7 +49,7 @@ function MyApp({ Component, pageProps }) {
         >
           <Link href="/">
             <Heading pb="3" display={["block", "none", "none"]} textAlign="center">
-              FFF-Podcast
+              Custos Vera
             </Heading>
           </Link>
           <Link href="/about">
@@ -59,11 +59,7 @@ function MyApp({ Component, pageProps }) {
           </Link>
           <Component {...pageProps} />
           <hr style={{ marginTop: "20px", paddingBottom: "10px" }} />
-          <Text>
-            Impressum und DSGVO:{"https://impressum.qualladoom.repl.co"}
-            <Link href="https://impressum.qualladoom.repl.co" style={{fontWeight: '600'}}> </Link>
-          </Text>
-        </Box>
+	        </Box>
       </Grid>
     </ChakraProvider>
   );
