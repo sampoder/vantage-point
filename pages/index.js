@@ -186,10 +186,10 @@ export default function Home(props) {
                   </Heading>
                 </Text>
                 <Text style={{ lineHeight: '1.9'}}>
-                 , written“The old world is dying and the new world struggles to be born. Now is the time of monsters.”
+                 “The old world is dying and the new world struggles to be born. Now is the time of monsters.”
                 </Text>
                 <Text style={{ lineHeight: '1.9'}}>
-                Antonio Gramsci-Italian COmmunist Theorist
+                Antonio Gramsci
                 </Text>
               </Box>
             </Box>
