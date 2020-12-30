@@ -64,7 +64,7 @@ export default function Home(props) {
             height="300px"
             backgroundPosition="center"
             width="100%"
-            objectFit="cover"
+            backgroundSize="cover"
             position="relative"
             _hover={{ transform: "scale(1.02)" }}
             transition="ease-in .5s"
