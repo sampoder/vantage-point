@@ -21,16 +21,6 @@ function MyApp({ Component, pageProps }) {
   return (
     <ChakraProvider theme={theme}>
       <Grid templateColumns="repeat(5, 1fr)" gap={6}>
-        <Box
-          display={["none", "block", "block"]}
-          style={{
-            width: "200px",
-            position: "fixed",
-            height: "100vh",
-            backgroundColor: "#FAF8EB",
-          }}
-        >
-          <Image src="https://cloud-bq7bm2lpz.vercel.app/0image_from_ios.png"/>
           <Box position="absolute" bottom="30px" width="100%">
             <Navigation
               onSelect={({ itemId }) => {
