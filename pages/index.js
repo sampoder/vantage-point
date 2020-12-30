@@ -20,12 +20,12 @@ export default function Home(props) {
   return (
     <div>
       <Head>
-        <title>FFF-Podcast</title>
-        <meta property="og:title" content={"Vantage Point"} />
-        <meta name="twitter:title" content={"Vantage Point"} />
+        <title>Custos Vera</title>
+        <meta property="og:title" content={"Custos Vera"} />
+        <meta name="twitter:title" content={"Custos Vera"} />
         <meta name="og:url" content={"https://vantage-point.vercel.app"} />
         <meta property="og:type" content="website" />
-        <meta property="og:site_name" content={"Vantage Point"} />
+        <meta property="og:site_name" content={"Custos Vera"} />
         <meta
           name="description"
           content={
