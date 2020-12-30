@@ -39,7 +39,6 @@ function MyApp({ Component, pageProps }) {
                 },
               ]}
             />
-          </Box>
         </Box>
         <Box
           width={["100vw", "calc(95vw)", "calc(95vw)"]}
