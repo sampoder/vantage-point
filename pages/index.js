@@ -23,25 +23,25 @@ export default function Home(props) {
         <title>Custos Vera</title>
         <meta property="og:title" content={"Custos Vera"} />
         <meta name="twitter:title" content={"Custos Vera"} />
-        <meta name="og:url" content={"https://vantage-point.vercel.app"} />
+        <meta name="og:url" content={"https://vantage-point-62gmr7n2g.vercel.app"} />
         <meta property="og:type" content="website" />
         <meta property="og:site_name" content={"Custos Vera"} />
         <meta
           name="description"
           content={
-            "Der FFF-Podcast informiert über Themen rund um den Klimawandel, Umweltschutz und natürlich Fridays for Future"
+            "Custos Vera is a geopolitical blog that was born to provide unbiased information on events as they occur."
           }
         />
         <meta
           property="og:description"
           content={
-            "Der FFF-Podcast informiert über Themen rund um den Klimawandel, Umweltschutz und natürlich Fridays for Future."
+            "Custos Vera is a geopolitical blog that was born to provide unbiased information on events as they occur."
           }
         />
         <meta
           name="twitter:description"
           content={
-            "Der FFF-Podcast informiert über Themen rund um den Klimawandel, Umweltschutz und natürlich Fridays for Future"
+            "Custos Vera- Unbiased information about events as they occur."
           }
         />
         <meta property="og:image" content={props.featured.image} />
@@ -70,14 +70,6 @@ export default function Home(props) {
             _hover={{ transform: "scale(1.02)" }}
             transition="ease-in .5s"
           >
-            <Box position="absolute" bottom="12" left="10">
-              <Heading color="white" fontSize="45px" pb="2">
-                {props.featured.title}
-              </Heading>
-              <Text color="white" fontSize="25px" mb="0!important">
-                {props.featured.issue == "1" ? "Editor's note" : `by ${props.featured.author}` }
-              </Text>
-            </Box>
           </Box>
         </Box>
       </Link>
