@@ -1,7 +1,7 @@
 ---
 title:  "How to manage stress 101 with Mr. Dunk"
 author: 'Maryam Adrianto and Federica Pivetti'
-image: 'https://images.unsplash.com/photo-1585314062340-f1a5a7c9328d?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max'
+image: 'https://cloud-4cxfwdkkn.vercel.app/0image_from_ios__1_.jpg'
 date: '2020/05/05'
 issue: '2'
 ---
