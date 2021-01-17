@@ -1,7 +1,7 @@
 ---
 title:  "A Psychological Virus"
 author: 'Darius Fleischmann'
-image: 'https://images.unsplash.com/photo-1585314062340-f1a5a7c9328d?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max'
+image: 'https://cloud-5lugduxg0.vercel.app/0corona-4983590_1920.jpg'
 date: '2020/05/05'
 issue: '2'
 editor: 'Elizabeth Chernyak'
