@@ -232,7 +232,7 @@ export default function Home(props) {
               position="relative"
               borderColor="black"
               borderWidth="1px"
-              display={props.featured.issue == "2" ? "none" : "block"}
+              display={"none"}
             >
               <Box p="5">
                 <Text pb="3">
