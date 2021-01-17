@@ -191,33 +191,25 @@ export default function Home(props) {
               <Box p="5">
                 <Text pb="15px">
                   <Heading display="inline-block">
-                    🖋 Drown in your freedom
+                    🖋 Sm:)e
                   </Heading>
                 </Text>
                 <Text style={{ lineHeight: '1.9'}}>
-                  Synchronised hearts screaming the ordinary,
+                  Contagious it is, this unspoken kindness,
                   <br />
-                  Frightened of the sharp whispers in their eyes,
+                  The radiating rainbow after misty darkness.
                   <br />
-                  Trapped inside the shadows of expectations,
+                  Stringing voiceless affection for the lovers,
                   <br />
-                  Hiding behind the bitter conventional walls.
+                  Sewing the broken hearts green undercover.
                   <br />
-                  Let the soft hues of your words take over,
+                  Bridging the unknown, fusing lost bonds, 
                   <br />
-                  Sweeping away the black and white world;
+                  It’s a trail of light through the soulless clouds.
                   <br />
-                  Let your crackling blood flood their minds,
+                  This obscure magic is concealed in everyone,
                   <br />
-                  Lining their veins with zealous fireworks;
-                  <br />
-                  Let the gracious wind swirling in your soul,
-                  <br />
-                  Spread through the rigid norms of humanity;
-                  <br />
-                  Let the spark gleaming through your eyes,
-                  <br />
-                  Inspire them to drown in their own freedom.
+                  One simple gesture and it’s all said and done. 
                   <br />
                   <br />
                   <i>by Muskaan Duneja</i>
