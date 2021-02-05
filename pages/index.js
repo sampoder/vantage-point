@@ -283,10 +283,9 @@ export default function Home(props) {
               borderWidth="1px"
               p="5"
             >
-              <strong>Want to join the team?</strong> We don't have a formal application
-              process open at the moment, however, you can email{" "}
+              <strong>Want to join the team?</strong> Awesome! We can't wait to hear from you, please fill out{" "}
               <i>
-                <a href="mailto:21elizabeth.c@gwa.edu.sg">Elizabeth Chernyak</a>
+                <a href="https://forms.gle/L52KTtMh8Kiw2e5Q7">this form</a>
               </i>{" "}
               if you're interested.
             </Box>
