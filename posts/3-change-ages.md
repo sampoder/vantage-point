@@ -1,5 +1,5 @@
 ---
-title:  "Change and progress from different ages, an introspective"
+title:  "An introspective on Change"
 author: 'Ishnaa Goenka'
 image: 'https://cloud-7a4rct2ci-hack-club-bot.vercel.app/0screenshot_2021-03-11_at_7.11.11_pm.png'
 date: '2020/05/05'
