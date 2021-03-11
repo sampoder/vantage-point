@@ -1,5 +1,5 @@
 ---
-title:  "Cultural Diversity on Broadway: Fallen or Flourishing?"
+title:  "Cultural Diversity on Broadway"
 author: 'Tanha Azam Chowdhury'
 image: 'https://images.unsplash.com/photo-1568650436496-a2a288c7be3f?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mnx8YnJvYWR3YXl8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&w=1000&q=80'
 date: '2020/05/05'
