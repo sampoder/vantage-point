@@ -191,25 +191,19 @@ export default function Home(props) {
               <Box p="5">
                 <Text pb="15px">
                   <Heading display="inline-block">
-                    🖋 Sm:)e
+                    🖋 Break of dawn
                   </Heading>
                 </Text>
                 <Text style={{ lineHeight: '1.9'}}>
-                  Contagious it is, this unspoken kindness,
+                  While the world swirls in endless shades and people keep changing their constant ways;
                   <br />
-                  The radiating rainbow after misty darkness.
+                  While the blissful promises that were once sworn are painfully torn apart in return; 
                   <br />
-                  Stringing voiceless affection for the lovers,
+                  While my cheeks are flustered with disappointment and my soul craves contentment; 
                   <br />
-                  Sewing the broken hearts green undercover.
+                  The one thing that drives me with hope and paints the sky that was once carefully broke
                   <br />
-                  Bridging the unknown, fusing lost bonds, 
-                  <br />
-                  It’s a trail of light through the soulless clouds.
-                  <br />
-                  This obscure magic is concealed in everyone,
-                  <br />
-                  One simple gesture and it’s all said and done. 
+                  Is the unshaken break of dawn that rises each day and returns the dream once withdrawn.
                   <br />
                   <br />
                   <i>by Muskaan Duneja</i>
