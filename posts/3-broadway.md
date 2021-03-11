@@ -1,7 +1,7 @@
 ---
 title:  "Cultural Diversity on Broadway: Fallen or Flourishing?"
 author: 'Tanha Azam Chowdhury'
-image: 'https://d20aeo683mqd6t.cloudfront.net/articles/title_images/000/026/802/original/pixta_22533690_S.jpg?2017&d=750x400'
+image: 'https://images.unsplash.com/photo-1568650436496-a2a288c7be3f?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mnx8YnJvYWR3YXl8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&w=1000&q=80'
 date: '2020/05/05'
 issue: '3'
 editor: 'Federica Pivetti'
