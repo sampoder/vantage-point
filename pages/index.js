@@ -75,7 +75,9 @@ export default function Home(props) {
                 {props.featured.title}
               </Heading>
               <Text color="white" fontSize="25px" mb="0!important">
-                {props.featured.issue == "1" ? "Editor's note" : `by ${props.featured.author}` }
+                {props.featured.issue == "1"
+                  ? "Editor's note"
+                  : `by ${props.featured.author}`}
               </Text>
             </Box>
           </Box>
@@ -190,20 +192,23 @@ export default function Home(props) {
             >
               <Box p="5">
                 <Text pb="15px">
-                  <Heading display="inline-block">
-                    🖋 Break of dawn
-                  </Heading>
+                  <Heading display="inline-block">🖋 Break of dawn</Heading>
                 </Text>
-                <Text style={{ lineHeight: '1.9'}}>
-                  While the world swirls in endless shades and people keep changing their constant ways;
+                <Text style={{ lineHeight: "1.9" }}>
+                  While the world swirls in endless shades and people keep
+                  changing their constant ways;
                   <br />
-                  While the blissful promises that were once sworn are painfully torn apart in return; 
+                  While the blissful promises that were once sworn are painfully
+                  torn apart in return;
                   <br />
-                  While my cheeks are flustered with disappointment and my soul craves contentment; 
+                  While my cheeks are flustered with disappointment and my soul
+                  craves contentment;
                   <br />
-                  The one thing that drives me with hope and paints the sky that was once carefully broke
+                  The one thing that drives me with hope and paints the sky that
+                  was once carefully broke
                   <br />
-                  Is the unshaken break of dawn that rises each day and returns the dream once withdrawn.
+                  Is the unshaken break of dawn that rises each day and returns
+                  the dream once withdrawn.
                   <br />
                   <br />
                   <i>by Muskaan Duneja</i>
@@ -257,14 +262,34 @@ export default function Home(props) {
             >
               <Box p="5">
                 <Text pb="3">
-                  <Heading display="inline-block">🎶 Playlist</Heading>
+                  <Heading display="inline-block">📰 Print Issues</Heading>
                 </Text>
-                <Text>▶ Blackbird by Sarah McLachlan</Text>
-                <Text>▶ New Light by John Mayer</Text>
-                <Text>▶ Butterfly by Cleo Sol</Text>
-                <Text>▶ WE ARE by Jon Batise</Text>
-                <Text>▶ All your love by Jakob Ogawa</Text>
-                <Text fontWeight="bold"><Link href="https://open.spotify.com/playlist/6I656k7GbBEsFd6qGUqL7l">▶ Listen to more on Spotify</Link></Text>
+                <SimpleGrid columns={2} spacing={"0.5rem"}>
+                  <Text
+                    as="a"
+                    href="https://cloud-fovn588z9-hack-club-bot.vercel.app/2issue_4_layout__4_.pdf"
+                  >
+                    ▶ Issue 4
+                  </Text>
+                  <Text
+                    as="a"
+                    href="https://cloud-fovn588z9-hack-club-bot.vercel.app/0issue_3_layout.pdf"
+                  >
+                    ▶ Issue 3
+                  </Text>
+                  <Text
+                    as="a"
+                    href="https://cloud-fovn588z9-hack-club-bot.vercel.app/3issue_2_layout__3_.pdf"
+                  >
+                    ▶ Issue 2
+                  </Text>
+                  <Text
+                    as="a"
+                    href="https://cloud-fovn588z9-hack-club-bot.vercel.app/1issue_1_layout.pdf"
+                  >
+                    ▶ Issue 1
+                  </Text>
+                </SimpleGrid>{" "}
               </Box>
             </Box>
             <Box
@@ -277,7 +302,8 @@ export default function Home(props) {
               borderWidth="1px"
               p="5"
             >
-              <strong>Want to join the team?</strong> Awesome! We can't wait to hear from you, please fill out{" "}
+              <strong>Want to join the team?</strong> Awesome! We can't wait to
+              hear from you, please fill out{" "}
               <i>
                 <a href="https://forms.gle/L52KTtMh8Kiw2e5Q7">this form</a>
               </i>{" "}
