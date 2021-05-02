@@ -159,7 +159,7 @@ export default function Home(props) {
                     height="100%"
                     transition="ease-in .5s"
                   >
-                    <Box position="absolute" bottom="12" left="10" pr="10">
+                    <Box position="absolute" bottom="6" left="10" pr="10">
                       <Heading
                         color="white"
                         fontSize="35px"

@@ -4,7 +4,7 @@ author: 'Elizabeth Chernyak'
 image: 'https://lh3.googleusercontent.com/t5tq9j7c0uFdIOAONCNXrhBGy_wVsIvSn3Z_OQWkPtyws8dZq73IAaWs9w3Kb_I4eW6JCZ47Y3P8rS1bG4E7Vf9R_OXhr_8orjaBiscSUGSUO7q6OpZ8pzfsCI3wRPTtDWGNsjv5'
 date: '2020/05/05'
 issue: '3'
-featured: true
+featured: false
 ---
 
 Change versus progress. Being hit by a bus and winning the lottery are both “change”, but we wanted to explore what signifies progress within the change. No, we did not talk about winning the lottery nor being hit by a bus, but we dove into the concept of time, change, and, ultimately, what it is that change brings. Is it always progress?
